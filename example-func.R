@@ -41,11 +41,3 @@ res.permt
 # Proposed test based on bootstrap
 res.boot = prop_test(d, type="boot", B=300, alpha=0.05)
 res.boot
-
-
-
-
-
-
-res.permt = prop_test(d, type="permt", B=300, alpha=0.05)
-res.boot = prop_test(d, type="boot", B=300, alpha=0.05)
