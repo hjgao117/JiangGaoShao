@@ -74,7 +74,7 @@ prop_test = function(d, type="permt", B=500, alpha=0.05){
     qt.CM = quantile(rep.CM, 1-alpha)
     qt.KS = quantile(rep.KS, 1-alpha)
     dc.CM = stat.CM > qt.CM
-    dc.KS = stat.CM > qt.KS
+    dc.KS = stat.KS > qt.KS
     
     ed = Sys.time()
     res[1:7] = c(stat.CM, qt.CM, dc.CM, 
@@ -112,7 +112,7 @@ prop_test = function(d, type="permt", B=500, alpha=0.05){
     qt.CM = quantile(rep.CM, 1-alpha)
     qt.KS = quantile(rep.KS, 1-alpha)
     dc.CM = stat.CM > qt.CM
-    dc.KS = stat.CM > qt.KS
+    dc.KS = stat.KS > qt.KS
     
     ed = Sys.time()
     res[1:7] = c(stat.CM, qt.CM, dc.CM, stat.KS, qt.KS, dc.KS,
